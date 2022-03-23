@@ -8,7 +8,7 @@ public protocol APICall {
     var path: String { get }
     var method: String { get }
     var headers: [String: String]? { get }
-    //func body() throws -> Data?
+    func body() throws -> Data?
 }
 
 public enum APIError: Swift.Error {
